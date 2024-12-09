@@ -4,11 +4,11 @@
  */
 package com.mycompany.proyectoisii;
 
+import com.mycompany.proyectoisii.Modelo.GestorDeBotiquin;
+import com.mycompany.proyectoisii.Modelo.MedicamentoBotiquin;
 import java.util.Date;
 import java.util.List;
-import javaapplication3.Modelo.GestorDeBotiquin;
-import javaapplication3.Modelo.Medicamento;
-import javaapplication3.Modelo.MedicamentoBotiquin;
+
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 

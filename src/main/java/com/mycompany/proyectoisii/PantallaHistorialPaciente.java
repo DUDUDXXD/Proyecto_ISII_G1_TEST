@@ -4,11 +4,10 @@
  */
 package com.mycompany.proyectoisii;
 
+import com.mycompany.proyectoisii.Modelo.Paciente;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
-
-import javaapplication3.Modelo.Paciente;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JScrollPane;
