@@ -117,7 +117,7 @@ public class PantallaLogin extends javax.swing.JFrame {
     private void entrarActionPerformed(java.awt.event.ActionEvent evt) {
 //GEN-FIRST:event_entrarActionPerformed
         String user = usuario.getText();
-        char[] contr = jPasswordField1.getPassword();
+        char[] contr = contrasegna.getPassword();
         String contrasegna = new String(contr);
 
         if(user.isEmpty() || contrasegna.isEmpty()){

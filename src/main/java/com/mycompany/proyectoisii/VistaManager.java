@@ -5,7 +5,6 @@
 package com.mycompany.proyectoisii;
 
 import com.mycompany.proyectoisii.PantallaListadoBotiquin;
-import javaapplication3.Modelo.Paciente;
 
 public class VistaManager {
     private Modelo.GestorDePacientes gestor;

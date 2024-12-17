@@ -5,7 +5,6 @@
 package com.mycompany.proyectoisii;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 /**
  *
@@ -13,9 +12,6 @@ import java.util.List;
  */
 public class Controlador {
     private Modelo.GestorDePacientes gestor;
-    private Modelo.GestorDeEnfermedades gestorenf;
-    private Modelo.Enfermedad enf;
-    private Modelo.Paciente pac;
     public Controlador(Modelo.GestorDePacientes gestor) {
         this.gestor = gestor;
     }
@@ -39,13 +35,6 @@ public class Controlador {
     
     
     public List<Modelo.Enfermedad> obtenerEnfermedadesPorNombre(String nombre){
-//        List<Modelo.Enfermedad> enfermedades = new ArrayList<>();
-//        for(Modelo.Enfermedad enfermedad : pac.getEnfermedades()) {
-//            if(enfermedad.getNombre() == nombre){
-//                enfermedades.add(enfermedad);
-//            }
-//        }
-//        return enfermedades;
         List<Modelo.Enfermedad> enfermedadesEncontradas = new ArrayList<>();
     for (Modelo.Enfermedad enfermedad : Modelo.GestorDeEnfermedades.obtenerTodasLasEnfermedades()) {
         if (enfermedad.getNombre().equalsIgnoreCase(nombre)) {
