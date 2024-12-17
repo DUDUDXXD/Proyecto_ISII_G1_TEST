@@ -8,8 +8,11 @@ public class Modelo {
 
     // Clase Paciente
     static class Paciente {
-        private String nombre, sintom,apellidos;
-        private int edad, hab;
+        private String nombre;
+        private String sintom; 
+        private String apellidos;
+        private int edad; 
+        private int hab;
         private List<Enfermedad> enfermedades;
         private List<HistorialEntrada> historial;
 
@@ -32,7 +35,7 @@ public class Modelo {
             this.enfermedades = new ArrayList<>();
         }
 
-        public void añadirEnfermedad(Enfermedad enfermedad) {
+        public void anyadirEnfermedad(Enfermedad enfermedad) {
             this.enfermedades.add(enfermedad);
         }
 
@@ -86,7 +89,7 @@ public class Modelo {
             return historial;
         }
         
-        public boolean añadirEntradaHistorial(String fecha, String dni, String enfermedad, String tratamiento) {
+        public boolean anyadirEntradaHistorial(String fecha, String dni, String enfermedad, String tratamiento) {
             for (HistorialEntrada entrada : historial) {
                 if (entrada.getFecha().equals(fecha) && entrada.getDni().equals(dni)) {
                     return false; // Entrada duplicada
@@ -328,13 +331,13 @@ medicamentosBotiquin.add(new MedicamentoBotiquin("Simvastatina", 15, new Date(Sy
 
         // Pacientes por defecto
         Paciente paciente1 = new Paciente("Juan", "Perez", 65, 13, "Nada");
-        paciente1.añadirEnfermedad(new Enfermedad("Diabetes", "Insulina", "5ml", "Diario", true));
+        paciente1.anyadirEnfermedad(new Enfermedad("Diabetes", "Insulina", "5ml", "Diario", true));
 
         Paciente paciente2 = new Paciente("Maria", " Garcia", 70, 14, "Dolor");
-        paciente2.añadirEnfermedad(new Enfermedad("Hipertensión", "Enalapril", "10mg", "Cada 12 horas", true));
+        paciente2.anyadirEnfermedad(new Enfermedad("Hipertensión", "Enalapril", "10mg", "Cada 12 horas", true));
 
         Paciente paciente3 = new Paciente("Carlos", "Ruiz", 55, 15, "Fiebre");
-        paciente3.añadirEnfermedad(new Enfermedad("Asma", "Salbutamol", "2 inhalaciones", "Cada 8 horas", true));
+        paciente3.anyadirEnfermedad(new Enfermedad("Asma", "Salbutamol", "2 inhalaciones", "Cada 8 horas", true));
 
         // Añadir los pacientes a la lista
         pacientes.add(paciente1);
@@ -342,7 +345,7 @@ medicamentosBotiquin.add(new MedicamentoBotiquin("Simvastatina", 15, new Date(Sy
         pacientes.add(paciente3);
     }
 
-    public void añadirPaciente(Paciente paciente) {
+    public void anyadirPaciente(Paciente paciente) {
         pacientes.add(paciente);
     }
 

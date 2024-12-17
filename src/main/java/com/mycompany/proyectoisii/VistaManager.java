@@ -24,8 +24,8 @@ public class VistaManager {
         gestorEnfermedades.precargarEnfermedades();
         Modelo.Paciente paciente1 = new Modelo.Paciente("Juan","Perez", 65, 13, "Nada");
         Modelo.Enfermedad enfermedad1 = new Modelo.Enfermedad("Diabetes", "Insulina", "5ml", "Diario", true);
-        paciente1.añadirEnfermedad(enfermedad1);
-        gestor.añadirPaciente(paciente1);
+        paciente1.anyadirEnfermedad(enfermedad1);
+        gestor.anyadirPaciente(paciente1);
     }
 
     public void mostrarPantallaMedicamentoPaciente() {

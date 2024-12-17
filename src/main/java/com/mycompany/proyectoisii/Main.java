@@ -15,7 +15,6 @@ public class Main {
                 }
             }
         } catch (Exception ex) {
-            ex.printStackTrace();
         }
 
         // Iniciar la aplicación usando VistaManager

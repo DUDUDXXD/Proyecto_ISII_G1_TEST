@@ -206,7 +206,7 @@ public class PantallaHistorialPaciente extends javax.swing.JFrame {
     }
 
     // Añadir al historial del paciente
-    if (!paciente.añadirEntradaHistorial(fecha, dni, enfermedad, tratamiento)) {
+    if (!paciente.anyadirEntradaHistorial(fecha, dni, enfermedad, tratamiento)) {
         JOptionPane.showMessageDialog(this, "Ya existe una entrada con la misma fecha y DNI", "Error", JOptionPane.ERROR_MESSAGE);
     } else {
         JOptionPane.showMessageDialog(this, "Entrada añadida correctamente al historial", "Éxito", JOptionPane.INFORMATION_MESSAGE);
